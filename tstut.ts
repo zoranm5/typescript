@@ -1,20 +1,14 @@
-var myName: string = "Derek";
-var myAge: number = 41;
-var canVote: boolean = true;
-var anything: any = "dog";
-anything = 2;
+var employees: string[]  = ["Bob", "Sally", "Sam"];
 
-document.getElementById("tsStuff")
-.innerHTML = "My Name is " + myName;
-document.getElementById("tsStuff")
-    .innerHTML = "My Name is " + myName;
-document.write("canVote is a " + typeof(canVote) + "<br />");
-document.write("myname is a " + typeof(myName) + "<br />");
-document.write("anything is a " + typeof(anything) + "<br />");
+document.write(employees.toString() + "<br /");
 
-var strToNum: number = parseInt("5");
 
-var numToStr: number = 5;
-document.write("numToStr is a" + typeof(numToStr.toString()) + "<br />";
 
-const PI = 3.14159;
+var superheroes: SuperHero[] = [];
+
+superheroes.push({
+    realName: 'Bruce Wayne',
+    superName: 'Batman'
+});
+
+document.write(superheroes[0].realName + " is " + superheroes[0].superName + "<br />");
